@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gruvbox-css/dist/gruvbox.min.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍄</text></svg>">
+  <title>lick my balls</title>
+  <style>
+    html {
+  zoom: 1;
+}
+
+    body {
+      color: #ebdbb2;
+      font-family: 'Fira Code', monospace;
+      padding: 20px;
+      margin: 0;
+      transition: background-color 1s;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      align-items: center;
+      justify-c: center;
+    }
+
+    .bio {
+      margin-bottom: 30px;
+    }
+
+    .bio h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .bio p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .work {
+      margin-bottom: 30px;
+    }
+
+    .work h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .work p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .work .date {
+      color: #b8bb26;
+      font-style: italic;
+    }
+
+    .work .description {
+      margin-top: 10px;
+    }
+  </style>
+<script>
+    function changeBackgroundColor() {
+      var body = document.querySelector('body');
+      var randomBackgroundColor = getRandomHexColor({ isDark: true });
+      body.style.backgroundColor = randomBackgroundColor;
+    
+      var paragraphs = document.querySelectorAll('p');
+      var headings = document.querySelectorAll('h1');
+      var subheadings = document.querySelectorAll('h2');
+      var links = document.querySelectorAll('a');
+    
+      paragraphs.forEach(function(paragraph) {
+        var randomColor = getRandomHexColor({ isDark: false });
+        paragraph.style.color = randomColor;
+      });
+    
+      headings.forEach(function(heading) {
+        var randomColor = getRandomHexColor({ isDark: false });
+        heading.style.color = randomColor;
+      });
+      links.forEach(function(link) {
+      var randomColor = getRandomHexColor({ isDark: false });
+      link.style.color = randomColor;
+    });
+    links.forEach(function(subheadings) {
+      var randomColor = getRandomHexColor({ isDark: false });
+      subheadings.style.color = randomColor;
+    });
+    }
+    
+    function getRandomHexColor(options) {
+      var letters = '0123456789ABCDEF';
+      var color = '#';
+      var brightnessRange = options.isDark ? [0, 8] : [8, 15];
+      for (var i = 0; i < 6; i++) {
+        var brightness = Math.floor(Math.random() * (brightnessRange[1] - brightnessRange[0] + 1)) + brightnessRange[0];
+        color += letters[brightness];
+      }
+      return color;
+    }
+    
+    setInterval(changeBackgroundColor, 1000);
+    </script>
+    
+</head>
+
+<body>
+  <div class="bio">
+    <h1><a href = "./launda.png"target="_blank">Sumeet Singh Gill</a></h1>
+    <p>I'm currently in grade 11, preparing for JEE, I am metric passed of course. I am generally introverted but I am approachable. You can talk to me in person and I will always try to respond. I have a keen interest in Computer Science and building "stuff".</p>
+  </div>
+
+  <h1>Links?</h1>
+  <h2><a href = "https://drunkenlyricist.github.io/poe"target="_blank">Poetry</a></h2>
+    <h2><a href = "https://drunkenlyricist.github.io/ebb"target="_blank">Death Countdown</a></h2>
+    <h2><a href = "https://www.pexels.com/@sumeet-gill-1453948/"target="_blank">Photography</a></h2>
+    <h2><a href = "https://twitter.com/livendede6"target="_blank">Twitter</a></h2>
+    <h2><a href = "https://instagram.com/"target="_blank">Instagram</a></h2>
+    <h2><a href = "https://youtube.com/channel/UCKWo_rvkArDVvpPN_C2_7DA"target="_blank">YouTube</a></h2>
+    <h2><a href = "https://github.com/DrunkenLyricist"target="_blank">GitHub</a></h2>
+    <h2><a href = "./of.mp4"target="_blank">OnlyFans</a></h2>
+    <h2><a href = "https://t.me/bfstabsh"target="_blank">Telegram</a></h2>
+    <h2><a href = "https://open.spotify.com/user/39sbhcspqrkaq5m6oley10wl7"target="_blank">Spotify</a></h2>
+    <h2><a href = "https://drunkenlyricist.github.io/sun"target="_blank">Daylight Timer</a></h2>
+    
+  </div>
+  <h2><a href = "mailto:gillsumeet31@gmail.com"target="_blank">gillsumeet31[at]gmail[dot]com</a></h2>
+
+</body>
+
+</html>
